@@ -10,12 +10,14 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import StickyContact from '@/components/StickyContact';
 import Navbar from '@/components/Navbar';
+import OurClients from '@/components/OurClients';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white text-black">
       <Navbar />
       <HeroSection />
+      <OurClients />
       <AboutSection />
       <ServicesSection />
       <ProjectsSection />

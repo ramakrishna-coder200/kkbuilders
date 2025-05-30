@@ -19,22 +19,30 @@ const AboutSection = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 gap-8">
-            <div className="text-center p-6 border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="text-3xl font-bold text-red-600 mb-2">30+</div>
-              <div className="text-sm text-gray-600">Skilled Professionals</div>
+               {/* Right Column - Stats Grid */}
+          <div className="grid grid-cols-2 gap-6">
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group">
+              <div className="text-4xl font-bold text-red-600 mb-3 group-hover:scale-110 transition-transform">35+</div>
+              <div className="text-slate-700 font-semibold uppercase tracking-wide text-sm">Completed Projects</div>
+              <div className="text-xs text-gray-500 mt-2">Successfully delivered on time and budget</div>
             </div>
-            <div className="text-center p-6 border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="text-3xl font-bold text-red-600 mb-2">35+</div>
-              <div className="text-sm text-gray-600">Completed Projects</div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group">
+              <div className="text-4xl font-bold text-red-600 mb-3 group-hover:scale-110 transition-transform">30+</div>
+              <div className="text-slate-700 font-semibold uppercase tracking-wide text-sm">Skilled Professionals</div>
+              <div className="text-xs text-gray-500 mt-2">Certified experts across all specializations</div>
             </div>
-            <div className="text-center p-6 border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="text-3xl font-bold text-red-600 mb-2">3+</div>
-              <div className="text-sm text-gray-600">Years Excellence</div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group">
+              <div className="text-4xl font-bold text-red-600 mb-3 group-hover:scale-110 transition-transform">3+</div>
+              <div className="text-slate-700 font-semibold uppercase tracking-wide text-sm">Years Excellence</div>
+              <div className="text-xs text-gray-500 mt-2">Proven track record of quality delivery</div>
             </div>
-            <div className="text-center p-6 border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="text-3xl font-bold text-red-600 mb-2">100%</div>
-              <div className="text-sm text-gray-600">Client Satisfaction</div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group">
+              <div className="text-4xl font-bold text-red-600 mb-3 group-hover:scale-110 transition-transform">100%</div>
+              <div className="text-slate-700 font-semibold uppercase tracking-wide text-sm">Client Satisfaction</div>
+              <div className="text-xs text-gray-500 mt-2">Commitment to exceeding expectations</div>
             </div>
           </div>
         </div>
