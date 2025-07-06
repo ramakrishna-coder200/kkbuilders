@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -37,8 +36,16 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section
+      id="services"
+      className="py-24 relative overflow-hidden"
+    >
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-grid-slate-100/50 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] pointer-events-none"></div>
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-purple-100/30 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -50,7 +57,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group"
+              className="border border-gray-300 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group bg-white/80"
             >
               <CardHeader className="text-center pb-4">
                 <div className="text-4xl mb-4">{service.icon}</div>
@@ -67,6 +74,12 @@ const ServicesSection = () => {
           ))}
         </div>
       </div>
+      <style jsx>{`
+        .bg-grid-slate-100\\/50 {
+          background-image: radial-gradient(circle, rgb(241 245 249 / 0.5) 1px, transparent 1px);
+          background-size: 24px 24px;
+        }
+      `}</style>
     </section>
   );
 };

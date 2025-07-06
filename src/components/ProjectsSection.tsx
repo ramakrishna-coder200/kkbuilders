@@ -1,29 +1,70 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import RamkyKrystal from '../assets/projects/RamkyOneKrystal.jpg'
+import medicalCollege from '../assets/projects/medicalCollege.jpg'
+import Rishnia from '../assets/projects/RisniaSkylon.jpg'
+import Pharmacity from '../assets/projects/Pharmacity.jpg'
+import brandix from '../assets/projects/brandix.jpg'
+import mondetez from '../assets/projects/mondetez.jpg'
+import navy from '../assets/projects/navy.jpg'
+import navalpark from '../assets/projects/navalpark.jpg'
 
 const ProjectsSection = () => {
+  const [showAll, setShowAll] = useState(false);
+
   const projects = [
     {
-      title: 'Commercial Complex Waterproofing',
-      location: 'Visakhapatnam',
-      description: 'Complete waterproofing solution for 5-story commercial building',
-      image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80'
+      title: 'Residential Project',
+      location: 'Sheela Nagar,Visakhapatnam',
+      description: 'Complete waterproofing solution for 5 story buildings and 100 Villas.',
+      image: RamkyKrystal
     },
     {
-      title: 'Industrial Flooring Project',
-      location: 'Gajuwaka',
-      description: 'Heavy-duty industrial flooring with anti-slip coating',
-      image: 'https://images.unsplash.com/photo-1527576539890-dfa815648363?auto=format&fit=crop&w=800&q=80'
+      title: 'Commercial Project ',
+      location: 'Vizianagaram, Paderu',
+      description: 'Complete waterproofing Solution for Hospital and Colleges ',
+      image: medicalCollege
     },
     {
-      title: 'Structural Repair & Restoration',
-      location: 'Andhra Pradesh',
-      description: 'Comprehensive structural rehabilitation of heritage building',
-      image: 'https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?auto=format&fit=crop&w=800&q=80'
-    }
+      title: 'Residential Project',
+      location: 'Bachupally, Hyderabad ',
+      description: 'Complete waterproofing solution for 12 story Buildings - 400 Flats.',
+      image: Rishnia
+    },
+    {
+      title: ' Commercial Project ',
+      location: ' Lankalapalem,Visakhapatnam',
+      description: ' PU Coatings for terrace and Paintings for entire Buildings.',
+      image: Pharmacity
+    },
+    {
+      title: 'Heavy Duty Industrial Project',
+      location: 'Atchuthapuram,Andhra Pradesh.',
+      description: '  Heavy duty Epoxy and PU Flooring system.',
+      image: brandix
+    },
+    {
+      title: ' Industrial Project',
+      location: 'Tada , Tirupati district',
+      description: 'Complete waterproofing solution for Terraces and Treated tanks.',
+      image: mondetez
+    },
+    {
+      title: ' Industrial Project',
+      location: 'Navi Mumbai',
+      description: 'Complete waterproofing solution for Officers Buildings and Substations.',
+      image: navy
+    },
+    {
+      title: ' Structural Repairs and Restoration',
+      location: 'Naval Park,Visakhapatnam ',
+      description: 'Structural Repairs and shotcreating for 20+ years old Buildings.',
+      image: navalpark
+    },
   ];
+
+  const visibleProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
     <section id="projects" className="py-24 bg-white">
@@ -36,7 +77,7 @@ const ProjectsSection = () => {
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {projects.map((project, index) => (
+          {visibleProjects.map((project, index) => (
             <Card 
               key={index} 
               className="overflow-hidden hover:shadow-xl transition-all duration-300 group"
@@ -59,9 +100,16 @@ const ProjectsSection = () => {
         </div>
         
         <div className="text-center">
-          <Button variant="outline" size="lg" className="border-2 border-black hover:bg-black hover:text-white">
-            Explore All Projects
-          </Button>
+          {!showAll && (
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-2 border-black hover:bg-black hover:text-white"
+              onClick={() => setShowAll(true)}
+            >
+              Explore All Projects
+            </Button>
+          )}
         </div>
       </div>
     </section>
