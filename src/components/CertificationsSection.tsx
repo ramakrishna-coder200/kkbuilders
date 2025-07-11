@@ -1,7 +1,7 @@
 import React from 'react';
 import FOSROC from '../assets/certifications/forroc.jpg';
-import DrFixit from '../assets/certifications/drfixit.jpg' 
-import MYKArment from '../assets/certifications/mykarment.jpg';
+import DrFixit from '../assets/certifications/DrFixit.jpg' 
+import MYKArment from '../assets/certifications/mykArment.jpg';
 import sunanda from '../assets/certifications/sunanda.jpg';
 const CertificationsSection = () => {
   const certifications = [

@@ -2,9 +2,9 @@ import React from "react";
 import { Shield, Droplets, Building, CheckCircle, Award, Users, Clock, ArrowRight } from "lucide-react";
 import terracewaterproofing from "../assets/works/terracewaterproofing.jpg"
 import basementwaterproofing from "../assets/works/waterproofing.jpg";
-import drfixit from "../assets/certifications/drfixit.jpg";
+import drfixit from "../assets/certifications/DrFixit.jpg";
 import fosroc from "../assets/certifications/forroc.jpg";
-import mykarment from "../assets/certifications/mykarment.jpg";
+import mykarment from "../assets/certifications/mykArment.jpg";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 

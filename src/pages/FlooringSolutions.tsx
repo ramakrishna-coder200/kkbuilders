@@ -1,8 +1,8 @@
 import React from "react";
 import { Layers, Zap, Factory, Shield, CheckCircle, Award, Thermometer, ArrowRight, Droplets, Sun } from "lucide-react";
-import drfixit from "../assets/certifications/drfixit.jpg";
+import drfixit from "../assets/certifications/DrFixit.jpg";
 import fosroc from "../assets/certifications/forroc.jpg";
-import mykarment from "../assets/certifications/mykarment.jpg";
+import mykarment from "../assets/certifications/mykArment.jpg";
 import expoxy from "../assets/works/epoxyflooring.jpg";
 import puflooring from "../assets/works/puflooring.jpg";
 import Navbar from "@/components/Navbar";
