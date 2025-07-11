@@ -53,7 +53,7 @@ const Footer = () => {
                   Waterproofing
                 </a>
               </li>
-              <li><a  href="/stuctural-repairs"
+              <li><a  href="/structural-repairs"
                   className="hover:text-white transition-colors">Structural Repairs</a></li>
               <li>
                 <a
