@@ -3,6 +3,7 @@ import { Wrench, Shield, Building2, AlertTriangle, CheckCircle, Award, Hammer, A
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import fosroc from "../assets/certifications/forroc.jpg";
+import drfixit from "../assets/certifications/DrFixit.jpg";
 import mykarment from "../assets/certifications/mykArment.jpg";
 const StructuralRepairs = () => {
   const certifications = [
