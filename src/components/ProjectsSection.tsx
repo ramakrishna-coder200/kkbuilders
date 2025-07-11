@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import RamkyKrystal from '../assets/projects/RamkyOneKrystal.jpg'
 import medicalCollege from '../assets/projects/medicalCollege.jpg'
 import Rishnia from '../assets/projects/RisniaSkylon.jpg'
-import Pharmacity from '../assets/projects/Pharmacity.jpg'
+import Pharmacity from '../assets/projects/pharmacity.jpg'
 import brandix from '../assets/projects/brandix.jpg'
 import mondetez from '../assets/projects/mondetez.jpg'
 import navy from '../assets/projects/navy.jpg'
