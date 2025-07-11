@@ -2,9 +2,9 @@ import React from "react";
 import { Wrench, Shield, Building2, AlertTriangle, CheckCircle, Award, Hammer, ArrowRight, Zap, Users, Target } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import drfixit from "../assets/certifications/drfixit.jpg";
+import drfixit from "../assets/certifications/DrFixit.jpg";
 import fosroc from "../assets/certifications/forroc.jpg";
-import mykarment from "../assets/certifications/mykarment.jpg";
+import mykarment from "../assets/certifications/mykArment.jpg";
 const StructuralRepairs = () => {
   const certifications = [
     { name: "Dr. Fixit", desc: "Structural repair systems" },
