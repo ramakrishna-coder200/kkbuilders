@@ -28,13 +28,20 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button 
+           
+            <a
+              href="https://wa.me/917416759126"
+              target="_blank"
+              rel="noopener noreferrer"
+            
+            >
+               <Button 
               size="lg" 
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg"
-              onClick={() => scrollToSection('contact')}
             >
               Get in Touch
             </Button>
+            </a>
             <Button 
               variant="outline" 
               size="lg" 

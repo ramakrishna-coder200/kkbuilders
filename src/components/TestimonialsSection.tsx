@@ -6,7 +6,7 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       quote: "KK Building Solutions delivered exceptional waterproofing for our commercial complex. Their attention to detail and professional approach exceeded our expectations.",
-      client: "Rajesh Kumar",
+      client: "Komali",
       designation: "Project Manager, Visakha Constructions"
     },
     {
