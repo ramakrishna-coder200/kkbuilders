@@ -99,3 +99,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .bg-grid-slate-100\/50 {
+    background-image: radial-gradient(circle, rgb(241 245 249 / 0.5) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}

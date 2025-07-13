@@ -1,39 +1,52 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { useNavigate } from 'react-router-dom';
 
 const ServicesSection = () => {
+  const navigate = useNavigate();
+
   const services = [
     {
       title: 'Waterproofing',
       description: 'Advanced waterproofing solutions using certified materials and proven techniques.',
-      icon: '🛡️'
+      icon: '🛡️',
+      route: '/waterproofing'
     },
     {
       title: 'Structural Repairs',
       description: 'Expert structural rehabilitation and strengthening for lasting durability.',
-      icon: '🏗️'
+      icon: '🏗️',
+      route: '/structural-repairs'
     },
     {
       title: 'Flooring',
       description: 'Premium flooring solutions from industrial to decorative applications.',
-      icon: '📐'
+      icon: '📐',
+      route: '/flooring-solutions'
     },
     {
       title: 'Coatings & Sealants',
       description: 'High-performance protective coatings for all environmental conditions.',
-      icon: '🎨'
+      icon: '🎨',
+      route: '/coatings-sealants'
     },
     {
       title: 'Crack Injection',
       description: 'Precision crack repair using advanced injection technologies.',
-      icon: '🔧'
+      icon: '🔧',
+      route: '/crack-injection'
     },
     {
       title: 'Consulting',
       description: 'Professional construction consulting and project management services.',
-      icon: '💼'
+      icon: '💼',
+      route: '/' // Redirect to home page since no dedicated consulting page exists
     }
   ];
+
+  const handleServiceClick = (route: string) => {
+    navigate(route);
+  };
 
   return (
     <section
@@ -57,7 +70,8 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className="border border-gray-300 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group bg-white/80"
+              className="border border-gray-300 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group bg-white/80 cursor-pointer"
+              onClick={() => handleServiceClick(service.route)}
             >
               <CardHeader className="text-center pb-4">
                 <div className="text-4xl mb-4">{service.icon}</div>
@@ -74,12 +88,6 @@ const ServicesSection = () => {
           ))}
         </div>
       </div>
-      <style jsx>{`
-        .bg-grid-slate-100\\/50 {
-          background-image: radial-gradient(circle, rgb(241 245 249 / 0.5) 1px, transparent 1px);
-          background-size: 24px 24px;
-        }
-      `}</style>
     </section>
   );
 };
