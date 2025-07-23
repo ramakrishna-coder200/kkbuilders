@@ -38,6 +38,7 @@ const StructuralRepairs = () => {
       techniques: ["FRP Application", "Fiber Reinforcement", "Lightweight Solutions"]
     }
   ];
+  console.log("Structural Repairs Page Loaded");
 
   const benefits = [
     { icon: Wrench, title: "Structural Integrity", desc: "Fixes cracks, corrosion, and settlement issues" },
